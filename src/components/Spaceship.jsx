@@ -1,5 +1,5 @@
 import React from "react";
-//import Logo from "../images/CR90-corvette.jpg";
+import Logo from "../images/CR90-corvette.jpg";
 import '../App.css'
 
 
@@ -16,7 +16,7 @@ function Spaceship(props){
         <div className="spaceshipContainer">
 
             <a href="">
-                <img src={require(`../images/${imgSource}.jpg`).default} className='spaceshipImage'/>
+                <img src={Logo} className='spaceshipImage'/>
             </a>
             <span>
                 <h1 key={props.children.name} className="spaceshipTitle">{props.children.name}</h1>
