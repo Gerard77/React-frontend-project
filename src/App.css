@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Left and right column */
+.column.side {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+/* Middle column */
+.column.middle {
+ -webkit-flex: 3;
+ -ms-flex: 3;
+ flex: 3;
+}
+
+.spaceshipList{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.spaceshipListElement{
+  flex: 1;
+}
+
+.spaceshipTitle{
+  margin-top: 0px;
+}
+
+.mainTitle{
+  -ms-flex-align: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+.rootTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.main_buttons{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.main_spaceships{
+  flex: 1;
+}
+
+.spaceshipContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+}
+
+.spaceshipImage{
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .invis {
+  	  	visibility: hidden;
+  }
+}
