@@ -26,7 +26,7 @@ function SpaceshipList(){
   
 return(
     <div className='main'>
-      <div className='main_buttons'>      
+      <div className='page_buttons'>      
         <button style={{width: 100, height: 25, fontSize: 15}} onClick={() => {console.log(count); count>0 ? setCount(prevCounter => prevCounter - 1) : null;}}> Page {count}</button>
         <button style={{width: 100, height: 25, fontSize: 15}} onClick={() => setCount(prevCounter => prevCounter + 1)}> Page {count+1}</button>
       </div>
@@ -38,6 +38,10 @@ return(
             </li>
           )}
         </ul>
+      </div>
+      <div className='page_buttons' style={{marginBottom: 40}}>      
+        <button style={{width: 100, height: 25, fontSize: 15}} onClick={() => {console.log(count); count>0 ? setCount(prevCounter => prevCounter - 1) : null;}}> Page {count}</button>
+        <button style={{width: 100, height: 25, fontSize: 15}} onClick={() => setCount(prevCounter => prevCounter + 1)}> Page {count+1}</button>
       </div>
     </div>
   );

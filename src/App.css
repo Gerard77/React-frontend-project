@@ -75,6 +75,7 @@ button {
 
 .spaceshipTitle{
   margin-top: 0px;
+  color: white;
 }
 
 .mainTitle{
@@ -96,9 +97,11 @@ button {
 .rootTitle{
   display: flex;
   justify-content: center;
+  font-size: 45px;
+  color: white;
 }
 
-.main_buttons{
+.page_buttons{
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -121,6 +124,13 @@ button {
 .spaceshipImage{
   object-fit: cover;
   width: 100%;
+}
+
+.spaceshipSpan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */

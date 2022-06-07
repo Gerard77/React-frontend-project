@@ -1,9 +1,7 @@
 import React from "react";
-import Logo from "../images/CR90-corvette.jpg";
 import '../App.css'
 
-
-
+//<div dangerouslySetInnerHTML={{ __html: props.children.manufacturer }}></div>
 /*function Person(props){
     return <div>{props.childern.title}</div>
 }*/
@@ -14,13 +12,12 @@ function Spaceship(props){
 
     return(
         <div className="spaceshipContainer">
-
             <a href="">
-                <img src={Logo} className='spaceshipImage'/>
+                <img src={`../../images/${imgSource}.jpg`} className='spaceshipImage'/>
             </a>
-            <span>
-                <h1 key={props.children.name} className="spaceshipTitle">{props.children.name}</h1>
-                <div dangerouslySetInnerHTML={{ __html: props.children.manufacturer }}></div>
+            <span className="spaceshipSpan">
+                <h2 key={props.children.name} className="spaceshipTitle">{props.children.name}</h2>
+                <h4 style={{fontWeight: 'normal', margin: 0, color: 'white'}}>{props.children.manufacturer}</h4>
             </span>
         </div>
     );
