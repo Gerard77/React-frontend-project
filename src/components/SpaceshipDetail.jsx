@@ -13,9 +13,9 @@ function SpaceshipDetail(){
                 <img src={`../../images/${imgSource}.jpg`} className='spaceshipImage'/>
             </a>
             <span className="spaceshipSpan">
-                <h2 key={state.name} className="spaceshipTitle">Model: {state.name}</h2>
+                <h2 key={state.name} className="spaceshipTitle">{state.name}</h2>
                 <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Manufacturer: {state.manufacturer}</h4>
-                <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Cost: {state.cost} credits</h4>
+                <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Cost: {state.cost_in_credits} credits</h4>
                 <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Length: {state.length} m</h4>
                 <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Crew: {state.crew}</h4>
                 <h4 style={{fontWeight: 'normal', margin: 0, color: 'white', marginBottom: 10}}>Passengers: {state.passengers}</h4>

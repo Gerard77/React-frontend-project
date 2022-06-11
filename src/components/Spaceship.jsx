@@ -1,11 +1,6 @@
 import React from "react";
 import '../App.css'
 
-//<div dangerouslySetInnerHTML={{ __html: props.children.manufacturer }}></div>
-/*function Person(props){
-    return <div>{props.childern.title}</div>
-}*/
-
 function Spaceship(props){
     const imgSource = props.children.name.replace(/\s/g,'-');
     console.log(imgSource);
